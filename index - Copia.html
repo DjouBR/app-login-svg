@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Laser Logo Animation</title>
+  </head>
+  <style>
+    
+
+.logo {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: draw 3s ease-in-out forwards;
+}
+
+@keyframes draw {
+  0% {
+    stroke-dashoffset: 1000;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+
+
+  </style>
+  <body>
+    <img src="logo grande.png" alt="Logo" width="30%" height="30%" class="logo">
+  </body>
+</html>
